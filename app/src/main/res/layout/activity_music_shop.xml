@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.ink.music_6.MusicShopActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3BBB73">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#3BBB73"
+            android:onClick="more"
+            android:text="选项"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="#3BBB73"
+            android:onClick="my"
+            android:text="我的"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="#3BBB73"
+            android:text="音乐馆"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="#3BBB73"
+            android:onClick="find"
+            android:text="发现"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#3BBB73"
+            android:text="搜索"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="精选" />
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="排行" />
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="歌单" />
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="电台" />
+
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="MV" />
+    </LinearLayout>
+</LinearLayout>

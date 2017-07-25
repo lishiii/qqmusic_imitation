@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ink.music_6.AdActivity"
+    android:background="@drawable/bg0"
+    >
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/skip1"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="330dp"
+        android:onClick="tiao"
+    />
+</RelativeLayout>

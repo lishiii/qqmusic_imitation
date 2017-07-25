@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.ink.music_6.HomeActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_zhujie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            tools:context="com.a645music.music.Zhujie">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3BBB73">
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3BBB73"
+                    android:onClick="more"
+                    android:text="选项"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3BBB73"
+                    android:text="我的"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3BBB73"
+                    android:onClick="musicshop"
+                    android:text="音乐馆"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3BBB73"
+                    android:onClick="find"
+                    android:text="发现"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3BBB73"
+                    android:text="搜索"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#CFC9EF" />
+
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/find"
+                android:gravity="center"
+                android:hint="搜   索"
+                android:paddingLeft="110dp"
+                android:paddingRight="110dp"
+                android:onClick="search"
+                android:textCursorDrawable="@null" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#CFC9EF" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="未知用户"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#CFC9EF" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:drawableTop="@drawable/music"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:text="全部歌曲" />
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:drawableTop="@drawable/load"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:text="下载歌曲" />
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:drawableTop="@drawable/recent_play"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:text="最近播放" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:drawableTop="@drawable/myfavorite"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:text="我喜欢" />
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:drawableTop="@drawable/mv_download"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:text="下载MV" />
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:drawableTop="@drawable/listen_music"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:text="听歌识曲" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#CFC9EF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <Button
+                    android:id="@+id/btn_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:drawableLeft="@drawable/radio_station"
+                    android:drawablePadding="35dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="100dp"
+                    android:paddingTop="5dp"
+                    android:text="个 性 电 台" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#CFC9EF" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView android:layout_weight="2" />
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="歌  单"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="新建歌单" />
+
+                    <TextView android:layout_height="match_parent" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

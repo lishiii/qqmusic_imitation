@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "cn.ink.music_7"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile files('D:/android/Music_7/libs/commons-beanutils-1.8.0.jar')
+    compile files('D:/android/Music_7/libs/commons-codec-1.6.jar')
+    compile files('D:/android/Music_7/libs/commons-collections-3.2.1.jar')
+    compile files('D:/android/Music_7/libs/commons-httpclient-3.0.1.jar')
+    compile files('D:/android/Music_7/libs/commons-lang-2.5.jar')
+    compile files('D:/android/Music_7/libs/commons-logging-1.1.1.jar')
+    compile files('D:/android/Music_7/libs/ezmorph-1.0.6.jar')
+    compile files('D:/android/Music_7/libs/fluent-hc-4.2.1.jar')
+    compile files('D:/android/Music_7/libs/httpclient-4.2.1.jar')
+    compile files('D:/android/Music_7/libs/httpclient-cache-4.2.1.jar')
+    compile files('D:/android/Music_7/libs/httpcore-4.2.1.jar')
+    compile files('D:/android/Music_7/libs/httpmime-4.2.1.jar')
+    compile files('D:/android/Music_7/libs/json-lib-2.4-jdk15.jar')
+}
